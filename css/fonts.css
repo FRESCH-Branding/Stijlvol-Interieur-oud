@@ -1,0 +1,9 @@
+@font-face {
+    font-family: OpenSansR;
+    src: url(/input/fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansRI;
+    src: url(/input/fonts/open-sans/OpenSans-RegularItalic.ttf);
+}
