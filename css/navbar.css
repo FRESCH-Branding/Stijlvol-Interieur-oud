@@ -2,17 +2,7 @@ nav {
     display: flex;
     background-color: #fff;
     /* change to desired color */
-
     justify-content: space-between;
-}
-
-.wrapper {
-    background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-
-    position: relative;
 }
 
 .logo {
