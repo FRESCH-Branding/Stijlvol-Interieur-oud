@@ -1,0 +1,121 @@
+nav {
+    display: flex;
+    background-color: #fff;
+    /* change to desired color */
+
+    justify-content: space-between;
+}
+
+.wrapper {
+    background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    height: 60px;
+    margin: 20px 75px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+
+    padding: 0;
+}
+
+nav .mainMenu li a {
+    font-family: OpenSansR;
+    display: inline-block;
+    text-decoration: none;
+    color: #2c3b42;
+    font-size: 16pt;
+    margin-right: 75px;
+    line-height: 10vh;
+}
+
+nav .mainMenu li a:hover {
+    color: #077132;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin-right: 30px;
+    line-height: 100px;
+    display: none;
+    cursor: pointer;
+    color: #2c3b42;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #2c3b42;
+}
+
+.icons a {
+    color: #2c3b42;
+}
+
+.icons a:hover {
+    color: #077132;
+}
+
+@media (max-width: 1100px) {
+    /* .logo {
+        margin: 2.5vh;
+    } */
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu li a {
+        margin-right: 0;
+        line-height: 8vh;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 4.5vh;
+        right: 30px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #077132;
+        font-size: 1.6rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .icons i:hover {
+        color: #077132;
+        transform: scale(1.2);
+    }
+}
