@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* ------------------------------------------------- */
 .intro {
     background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
     transform: scaleX(-1);
@@ -16,27 +17,70 @@
     position: relative;
 }
 
-
 .intro-text {
+    /* color: #077132; */
     color: #fff;
+    padding-top: 30%;
+    padding-left: 4%;
     font-family: OpenSansM;
     font-size: 1.5rem;
-
+    text-shadow: 2px 2px 5px #2c3b42;
     transform: scaleX(-1);
+
 }
 
-.intro-text p {
+.intro-text a {
+    font-size: 2.5rem;
+}
+
+
+/* ------------------------------------------------- */
+.Over {
+    font-family: OpenSansB;
     font-size: 2rem;
-
+    color: #2c3b42;
+    text-align: center;
+    padding-top: 50px;
+    /* position: absolute; */
+    background-image: url("/input/afbeeldingen/logo/Asset\ 2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    background-position: 50% 80px;
 }
 
 
-.vulling {
-    height: 1000px;
-    background-color: #fff;
+hr.solid {
+    /* border-top: 3px solid #077132; */
+    border-top: 3px solid #2c3b42;
+    width: 50px;
+
+    margin: 20px auto 20px auto;
 }
 
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    width: 60%;
+    margin: 30px auto 50px auto;
+    /* position: relative; */
 
+
+}
+
+.grid-item {
+    /* border: 1px solid #000; */
+    padding: 20px;
+    text-align: left;
+
+    font-family: OpenSansR;
+    font-size: 1rem;
+    color: #2c3b42;
+}
+
+/* ------------------------------------------------- */
 footer {
     display: block;
     bottom: 0;

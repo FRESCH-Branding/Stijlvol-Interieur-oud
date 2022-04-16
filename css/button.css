@@ -2,7 +2,7 @@
     height: 100%;
     position: absolute;
     top: 120%;
-    left: 85%;
+    left: 88.5%;
     transform: translate(-50%, -50%);
 }
 
@@ -12,6 +12,7 @@
     display: inline-block;
     width: 277px;
     height: 50px;
+    color: #fff;
     font-family: OpenSansR;
     font-size: 1em;
     font-weight: bold;
@@ -40,14 +41,6 @@
     stroke-dashoffset: 0;
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease;
-}
-
-.btn span {
-    background: #fff;
-
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .btn:hover svg rect {
