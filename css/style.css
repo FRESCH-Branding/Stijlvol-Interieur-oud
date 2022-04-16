@@ -6,6 +6,7 @@
 
 .intro {
     background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
+    transform: scaleX(-1);
     min-height: 88vh;
     width: 96vw;
     background-position: center;
@@ -15,9 +16,18 @@
     position: relative;
 }
 
+
 .intro-text {
-    color: #077132;
-    font-family: OpenSansR;
+    color: #fff;
+    font-family: OpenSansM;
+    font-size: 1.5rem;
+
+    transform: scaleX(-1);
+}
+
+.intro-text p {
+    font-size: 2rem;
+
 }
 
 

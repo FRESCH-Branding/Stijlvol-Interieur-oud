@@ -2,7 +2,7 @@
     height: 100%;
     position: absolute;
     top: 120%;
-    left: 50%;
+    left: 85%;
     transform: translate(-50%, -50%);
 }
 
@@ -21,6 +21,7 @@
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
+    transform: scaleX(-1);
 
     font-size: 17px;
     letter-spacing: 0.045em;
@@ -33,7 +34,7 @@
 }
 
 .btn svg rect {
-    stroke: #000;
+    stroke: #fff;
     stroke-width: 3;
     stroke-dasharray: 353, 0;
     stroke-dashoffset: 0;
@@ -42,7 +43,7 @@
 }
 
 .btn span {
-    background: #000;
+    background: #fff;
 
 
     -webkit-background-clip: text;
