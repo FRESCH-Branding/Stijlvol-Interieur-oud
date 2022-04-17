@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: OpenSansR;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: OpenSansB;
+    font-size: 3rem;
+    color: #2c3b42;
+    text-align: center;
+    padding-top: 50px;
 }
 
 /* ------------------------------------------------- */
@@ -36,11 +47,6 @@
 
 /* ------------------------------------------------- */
 .Over {
-    font-family: OpenSansB;
-    font-size: 2rem;
-    color: #2c3b42;
-    text-align: center;
-    padding-top: 50px;
     /* position: absolute; */
     background-image: url("/input/afbeeldingen/logo/Asset\ 2.png");
     background-repeat: no-repeat;
@@ -49,35 +55,105 @@
     background-position: 50% 80px;
 }
 
+.Over a {
+    font-family: OpenSansM;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2c3b42;
+
+    display: block;
+    text-align: center
+}
 
 hr.solid {
     /* border-top: 3px solid #077132; */
     border-top: 3px solid #2c3b42;
     width: 50px;
-
     margin: 20px auto 20px auto;
 }
 
-.grid-container {
+.Over-Grid {
     display: grid;
     column-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 10px;
     width: 60%;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 0 auto;
     /* position: relative; */
-
-
 }
 
-.grid-item {
+.Text-Grid {
     /* border: 1px solid #000; */
     padding: 20px;
     text-align: left;
-
     font-family: OpenSansR;
     font-size: 1rem;
     color: #2c3b42;
+}
+
+@media (max-width: 1100px) {
+    .Over-Grid {
+        margin: 0 auto 0 auto;
+        width: 70%;
+        justify-content: center;
+    }
+
+    .Text-Grid {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* ------------------------------------------------- */
+.Portfolio-Grid {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px 350px;
+    gap: 20px 20px;
+    padding: 10px 10px 100px 10px;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+}
+
+.Portfolio-Grid>div {
+    background-color: #777;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.Portfolio-Grid>.Portfolio {
+    background-image: url(/input/afbeeldingen/shutterstock_1814712359.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item9 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+
+/* ------------------------------------------------- */
+.Contact {
+    height: 500px;
+    width: 96vw;
+    background-color: rgba(44, 59, 66, 0.2);
+    margin: 0 auto 0 auto;
+}
+
+.Contact-info {
+    color: #fff;
+    text-align: center;
 }
 
 /* ------------------------------------------------- */
@@ -85,7 +161,7 @@ footer {
     display: block;
     bottom: 0;
     height: 200px;
-    background-color: #2c3b42;
+    /* background-color: #2c3b42; */
     bottom: 0;
 }
 

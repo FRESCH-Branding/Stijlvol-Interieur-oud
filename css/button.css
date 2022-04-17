@@ -1,7 +1,5 @@
 .container {
-    height: 100%;
     position: absolute;
-    top: 120%;
     left: 88.5%;
     transform: translate(-50%, -50%);
 }
