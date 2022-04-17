@@ -107,8 +107,8 @@ hr.solid {
 /* ------------------------------------------------- */
 .Portfolio-Grid {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 350px 350px 350px 350px;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px;
     gap: 20px 20px;
     padding: 10px 10px 100px 10px;
     margin: 0 auto 0 auto;
@@ -116,52 +116,93 @@ hr.solid {
 }
 
 .Portfolio-Grid>div {
-    background-color: #777;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
 }
 
-.Portfolio-Grid>.Portfolio {
+.Portfolio-Grid>.Portfolio-item-img {
     background-image: url(/input/afbeeldingen/shutterstock_1814712359.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
-.item1 {
+.Portfolio-item {
+    background-color: #077132;
+    opacity: 0.2;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.groot1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.item9 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
+.groot2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+@media (max-width: 1100px) {
+    .Portfolio-Grid {
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(6, 80vw);
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .item9 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
 
 }
 
 /* ------------------------------------------------- */
 .Contact {
-    height: 500px;
+    position: relative;
+    height: 700px;
     width: 96vw;
-    background-color: rgba(44, 59, 66, 0.2);
-    margin: 0 auto 0 auto;
+    background-color: rgba(44, 59, 66, 0.1);
+    margin: 0 auto 30px auto;
+}
+
+.Contact-Stroke {
+    position: absolute;
+    height: 660px;
+    width: 94vw;
+    border: 2px solid;
+    border-color: #fff;
+    margin: 20px;
+    /* margin: auto; */
 }
 
 .Contact-info {
-    color: #fff;
+    color: #2c3b42;
     text-align: center;
 }
 
 /* ------------------------------------------------- */
-footer {
+/* footer {
     display: block;
     bottom: 0;
     height: 200px;
-    /* background-color: #2c3b42; */
+    background-color: #2c3b42;
     bottom: 0;
 }
 
@@ -182,4 +223,4 @@ footer {
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
-}
+} */
