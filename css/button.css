@@ -1,34 +1,27 @@
 .container {
     position: absolute;
-    left: 88.5%;
-    transform: translate(-50%, -50%);
+    left: 81%;
+    /* transform: translate(-50%, -50%); */
 }
 
 .btn {
-    margin-top: calc(50% + 25px);
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     width: 277px;
-    height: 50px;
     color: #fff;
-    font-family: OpenSansR;
+    font-family: OpenSansM;
     font-size: 1em;
-    font-weight: bold;
     line-height: 60px;
     text-align: center;
-    text-transform: uppercase;
-    background-color: transparent;
     cursor: pointer;
     text-decoration: none;
     transform: scaleX(-1);
 
-    font-size: 17px;
     letter-spacing: 0.045em;
 }
 
 .btn svg {
     position: absolute;
-    top: 0;
     left: 0;
 }
 
@@ -45,4 +38,12 @@
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        position: absolute;
+        left: 22%;
+        /* transform: translate(-50%, -50%); */
+    }
 }
