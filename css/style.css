@@ -191,16 +191,21 @@ hr.solid {
 }
 
 .Contact-Stroke {
-    position: absolute;
+    position: relative;
     height: 660px;
     width: 94vw;
     border: 2px solid;
     border-color: #fff;
+    color: #fff;
     margin: 20px;
 }
 
+.Contact-Stroke a {
+    position: absolute;
+    bottom: 0;
+}
+
 .Contact-info {
-    color: #2c3b42;
     text-align: center;
 }
 
