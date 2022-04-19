@@ -19,7 +19,7 @@ h1 {
 .intro {
     background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
     transform: scaleX(-1);
-    min-height: 88vh;
+    min-height: 87vh;
     width: 96vw;
     background-position: center;
     background-size: cover;
