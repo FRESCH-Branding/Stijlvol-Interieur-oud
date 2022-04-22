@@ -43,17 +43,6 @@ h1 {
     font-size: 2.5rem;
 }
 
-@media (max-width: 1100px) {
-    .intro-text {
-        padding: 120% 4% 0 4%;
-        font-size: 1rem;
-    }
-
-    .intro-text a {
-        font-size: 2rem;
-    }
-}
-
 .intro-button {
     position: absolute;
     left: 81%;
@@ -97,6 +86,15 @@ h1 {
 }
 
 @media (max-width: 1100px) {
+    .intro-text {
+        padding: 120% 4% 0 4%;
+        font-size: 1rem;
+    }
+
+    .intro-text a {
+        font-size: 2rem;
+    }
+
     .intro-button {
         position: absolute;
         left: 22%;
@@ -210,10 +208,10 @@ hr.solid {
     grid-row-end: 4;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1500px) {
     .Portfolio-Grid {
-        grid-template-columns: 80vw;
-        grid-template-rows: repeat(6, 80vw);
+        grid-template-columns: 50vw;
+        grid-template-rows: repeat(6, 50vw);
     }
 
     .groot1 {
@@ -231,6 +229,20 @@ hr.solid {
     }
 }
 
+@media (max-width: 900px) {
+    .Portfolio-Grid {
+        grid-template-columns: 65vw;
+        grid-template-rows: repeat(6, 65vw);
+    }
+}
+
+@media (max-width: 500px) {
+    .Portfolio-Grid {
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(6, 80vw);
+    }
+}
+
 /* ------------------------------------------------- */
 .Contact {
     position: relative;
@@ -244,8 +256,9 @@ hr.solid {
 
 .Contact-Stroke {
     position: absolute;
+    margin: auto;
     height: 660px;
-    width: 94vw;
+    width: 98%;
     border: 2px solid #fff;
     color: #fff;
     margin: 20px;
@@ -292,7 +305,7 @@ hr.solid {
 }
 
 .Footer-info a:hover,
-.Footer-SM a:hover {
+.Footer-SM i:hover {
     color: #077132;
 }
 
@@ -309,18 +322,34 @@ hr.solid {
     text-decoration: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width:1500px) {
     .Contact-Stroke {
-        width: 86vw;
+        border: none;
+        height: 300px;
+        margin: 0 auto 0 auto;
+        width: 100%;
     }
 
-    .Footer-Grid {
-        grid-template-columns: 1fr;
-        gap: 0;
-        margin-bottom: 20px;
+}
+
+@media (max-width:1100px) {
+    .Contact {
+        height: 325px;
+        margin: 0 auto 10px auto;
     }
 
     .Footer-logo {
         width: 50vw;
+        padding: 50px 0 0 0;
+    }
+
+    .Footer-Grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 50px;
+    }
+
+    .Footer-info {
+        display: none;
     }
 }

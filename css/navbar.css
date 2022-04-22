@@ -58,9 +58,9 @@ nav .mainMenu .closeMenu,
 }
 
 @media (max-width: 1100px) {
-    /* .logo {
-        margin: 2.5vh;
-    } */
+    .logo {
+        margin: 2.5vh 0 2.5vh 5vw;
+    }
 
     nav .mainMenu {
         height: 100vh;
@@ -78,6 +78,7 @@ nav .mainMenu .closeMenu,
     }
 
     nav .mainMenu li a {
+        position: relative;
         margin-right: 0;
         line-height: 8vh;
     }
