@@ -105,7 +105,6 @@ h1 {
 
 /* ------------------------------------------------- */
 .Over {
-    /* position: absolute; */
     background-image: url("/input/afbeeldingen/logo/Asset\ 2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -124,7 +123,6 @@ h1 {
 }
 
 hr.solid {
-    /* border-top: 3px solid #077132; */
     border-top: 3px solid #2c3b42;
     width: 50px;
     margin: 20px auto 20px auto;
@@ -137,11 +135,9 @@ hr.solid {
     padding: 10px;
     width: 60%;
     margin: 30px auto 0 auto;
-    /* position: relative; */
 }
 
 .Text-Grid {
-    /* border: 1px solid #000; */
     padding: 20px;
     text-align: left;
     font-family: OpenSansR;
@@ -295,7 +291,6 @@ hr.solid {
     font-size: 1.5rem;
     text-decoration: none;
     display: flex;
-
 }
 
 .Footer-SM i {
@@ -329,7 +324,6 @@ hr.solid {
         margin: 0 auto 0 auto;
         width: 100%;
     }
-
 }
 
 @media (max-width:1100px) {
