@@ -176,10 +176,17 @@ hr.solid {
     font-size: 30px;
 }
 
-.Portfolio-Grid>.Portfolio-item-img {
+.Portfolio-item-img {
     background-image: url(/input/afbeeldingen/shutterstock_1814712359.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Portfolio-item-img:hover {
+    background-size: auto 103%;
+    transition: 0.3s;
 }
 
 .Portfolio-item {

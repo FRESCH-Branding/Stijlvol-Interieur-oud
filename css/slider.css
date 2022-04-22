@@ -9,17 +9,15 @@
     padding: 0 0 100px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: OpenSansR;
-    color: #080808;
+    color: #000;
 }
 
 .referentie-container {
     position: relative;
-    width: 800px;
-    min-width: 350px;
-    min-height: 250px;
-    padding-bottom: 40px;
+    width: 1000px;
+    /* min-width: 450px; */
+    min-height: 350px;
+    padding-bottom: 60px;
     overflow: hidden;
 }
 
@@ -33,21 +31,17 @@
 }
 
 .card {
-    width: 800px;
-    min-height: 100%;
     background: #fff;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 10px -8px #000;
 }
 
 .card-thumb {
-    width: 70%;
-    height: 250px;
+    width: 75%;
+    height: 325px;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
@@ -75,7 +69,8 @@
     width: 120%;
     min-height: 100%;
     height: auto;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     position: relative;
     padding-bottom: 50px;
 }
