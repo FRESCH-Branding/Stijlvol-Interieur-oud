@@ -12,7 +12,7 @@ h1 {
     font-size: 3rem;
     color: #2c3b42;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 /* ------------------------------------------------- */
@@ -51,6 +51,56 @@ h1 {
 
     .intro-text a {
         font-size: 2rem;
+    }
+}
+
+.intro-button {
+    position: absolute;
+    left: 81%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.btn {
+    /* position: relative; */
+    display: inline-block;
+    width: 277px;
+    color: #fff;
+    font-family: OpenSansM;
+    font-size: 1em;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transform: scaleX(-1);
+
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    left: 0;
+}
+
+.btn svg rect {
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+@media (max-width: 1100px) {
+    .intro-button {
+        position: absolute;
+        left: 22%;
+        /* transform: translate(-50%, -50%); */
     }
 }
 
@@ -120,7 +170,7 @@ hr.solid {
     grid-template-columns: 350px 350px 350px 350px;
     grid-template-rows: 350px 350px 350px;
     gap: 20px 20px;
-    padding: 10px 10px 100px 10px;
+    padding: 10px;
     margin: 0 auto 0 auto;
     justify-content: center;
 }
@@ -200,10 +250,6 @@ hr.solid {
     color: #fff;
     margin: 20px;
 }
-
-
-
-
 
 .Footer-Grid {
     display: grid;
