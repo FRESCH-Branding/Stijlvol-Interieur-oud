@@ -15,6 +15,10 @@ h1 {
     padding-top: 100px;
 }
 
+.inhoud {
+    height: 1000px;
+}
+
 /* ------------------------------------------------- */
 .intro {
     background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
@@ -101,7 +105,6 @@ h1 {
         /* transform: translate(-50%, -50%); */
     }
 }
-
 
 /* ------------------------------------------------- */
 .Over {
@@ -249,7 +252,7 @@ hr.solid {
 /* ------------------------------------------------- */
 .Contact {
     position: relative;
-    height: 700px;
+    height: 500px;
     width: 96vw;
     background-color: rgba(44, 59, 66, 0.3);
     margin: 0 auto 30px auto;
@@ -260,7 +263,7 @@ hr.solid {
 .Contact-Stroke {
     position: absolute;
     margin: auto;
-    height: 660px;
+    height: 460px;
     width: 98%;
     border: 2px solid #fff;
     color: #fff;
@@ -284,18 +287,19 @@ hr.solid {
 
 .Footer-logo {
     padding: 50px 0 50px 0;
+    width: 300px;
 }
 
 .Footer-info {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-align: left;
 }
 
 .Footer-info a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     display: flex;
 }
@@ -316,11 +320,12 @@ hr.solid {
     justify-content: center;
     width: 100%;
     bottom: 10px;
+    font-size: 0.8rem;
 }
 
 .copyrights a {
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
