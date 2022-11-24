@@ -1,0 +1,31 @@
+@font-face {
+    font-family: OpenSansR;
+    src: url(/input/fonts/open-sans/OpenSans-Regular.ttf);}
+@font-face {
+    font-family: OpenSansRI;
+    src: url(/input/fonts/open-sans/OpenSans-RegularItalic.ttf);}
+@font-face {
+    font-family: OpenSansL;
+    src: url(/input/fonts/open-sans/OpenSans-Light.ttf);}
+@font-face {
+    font-family: OpenSansM;
+    src: url(/input/fonts/open-sans/OpenSans-Medium.ttf);}
+@font-face {
+    font-family: OpenSansB;
+    src: url(/input/fonts/open-sans/OpenSans-Bold.ttf);}
+
+:root {
+    --white: #fff;
+    --gray: #2c3b42;
+    /* --lightgray: rgba(7, 113, 50, 0.3); */
+    --green: #077132; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: OpenSansR;
+    font-size: 1rem;
+}
