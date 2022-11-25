@@ -17,8 +17,14 @@
 :root {
     --white: #fff;
     --gray: #2c3b42;
-    /* --lightgray: rgba(7, 113, 50, 0.3); */
+    --lightgray: rgba(7, 113, 50, 0.3);
     --green: #077132; 
+
+    --Regular: OpenSansR;
+    --Regular-italic: OpenSansRI;
+    --Light: OpenSansL;
+    --Medium: OpenSansM;
+    --Bold: OpenSansB;
 }
 
 * {

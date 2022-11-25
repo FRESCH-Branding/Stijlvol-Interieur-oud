@@ -48,9 +48,10 @@ h1 {
 
 .intro-text {
     /* color: #077132; */
-    color: #fff;
+    color: var(--white);
     padding: 30% 4% 0 4%;
-    font-family: OpenSansM;
+    /* font-family: OpenSansM; */
+    font-family: var(--Medium);
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px #2c3b42;
     transform: scaleX(-1);
@@ -71,7 +72,7 @@ h1 {
     /* position: relative; */
     display: inline-block;
     width: 277px;
-    color: #fff;
+    color: var(--white);
     font-family: OpenSansM;
     font-size: 1em;
     line-height: 60px;
@@ -89,7 +90,7 @@ h1 {
 }
 
 .btn svg rect {
-    stroke: #fff;
+    stroke: var(--white);
     stroke-width: 3;
     stroke-dasharray: 353, 0;
     stroke-dashoffset: 0;
@@ -121,167 +122,74 @@ h1 {
 }
 
 /* ------------------------------------------------- */
-.Over {
-    background-image: url("/input/afbeeldingen/logo/Asset\ 2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25%;
-    background-position: 50% 80px;
+.Expertise-section {
+    background-image: url(/input/afbeeldingen/Hout\ structuur-3.svg);
+    width: 100vw;
+    height: 100vh;
+    margin-top: -100px;
 }
 
-.Over a {
-    font-family: OpenSansM;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #2c3b42;
-
-    display: block;
-    text-align: center
+.spacer {
+    height: 250px;
 }
 
-hr.solid {
-    border-top: 3px solid #2c3b42;
-    width: 50px;
-    margin: 20px auto 20px auto;
-}
-
-.Over-Grid {
+.Expertise-grid {
     display: grid;
-    column-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 10px;
-    width: 60%;
-    margin: 30px auto 0 auto;
-}
-
-.Text-Grid {
-    padding: 20px;
-    text-align: left;
-    font-family: OpenSansR;
-    font-size: 1rem;
-    color: #2c3b42;
-}
-
-@media (max-width: 1100px) {
-    .Over-Grid {
-        margin: 0 auto 0 auto;
-        width: 70%;
-        justify-content: center;
-    }
-
-    .Text-Grid {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-}
-
-/* ------------------------------------------------- */
-.Portfolio-Grid {
-    display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-template-rows: 350px 350px 350px;
-    gap: 20px 20px;
-    padding: 10px;
-    margin: 0 auto 0 auto;
+    grid-template-columns: repeat(2, 675px );
+    grid-template-rows: 500px;
+    grid-gap: 50px;
     justify-content: center;
 }
 
-.Portfolio-Grid>div {
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
-.Portfolio-item-img {
+.Expertise-item {
+    display: grid;
+    background-color: var(--gray);
     background-image: url(/input/afbeeldingen/shutterstock_1814712359.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.Portfolio-item-img:hover {
-    background-size: auto 103%;
-    transition: 0.3s;
+.Expertise-item a {
+    font-family: var(--Bold);
+    font-size: 7rem;
+    color: var(--green);
+    text-decoration: none;
 }
 
-.Portfolio-item {
-    background-color: #077132;
-    opacity: 0.2;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+.meubels {
+    margin-top: 100px;
 }
 
-.groot1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.meubels a {
+    margin: -100px auto auto -75px;
 }
 
-.groot2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
+.interieur {
+    display: grid;
+    justify-content: end;
+    align-items: end;
 }
 
-@media (max-width: 1500px) {
-    .Portfolio-Grid {
-        grid-template-columns: 50vw;
-        grid-template-rows: repeat(6, 50vw);
-    }
-
-    .groot1 {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .groot2 {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 6;
-        grid-row-end: 6;
-    }
+.interieur a {
+    margin: auto -75px -75px auto;
 }
 
-@media (max-width: 900px) {
-    .Portfolio-Grid {
-        grid-template-columns: 65vw;
-        grid-template-rows: repeat(6, 65vw);
-    }
-}
-
-@media (max-width: 500px) {
-    .Portfolio-Grid {
-        grid-template-columns: 80vw;
-        grid-template-rows: repeat(6, 80vw);
-    }
-}
-
-/* ------------------------------------------------- */
+/* ---------------------- Footer --------------------------- */
 .Contact {
     position: relative;
-    height: 500px;
+    height: 50vh;
     width: 96vw;
-    background-color: rgba(44, 59, 66, 0.3);
     margin: 0 auto 30px auto;
-
     text-align: center;
+    background-color: var(--gray);
 }
 
-.Contact-Stroke {
-    position: absolute;
-    margin: auto;
-    height: 460px;
-    width: 98%;
-    border: 2px solid #fff;
-    color: #fff;
-    margin: 20px;
+.Contact-bg {
+    background-image: url(/input/afbeeldingen/logo/Stijlvol\ Interieur\ logo\ icon\ -\ wit-3.svg);
+    background-size: 100%;
+    background-position: center;
+    height: 50vh;
 }
 
 .Footer-Grid {
@@ -296,7 +204,6 @@ hr.solid {
 .Footer-item {
     display: block;
     margin: 0 auto 0 auto;
-
 }
 
 .Footer-logo {
@@ -305,37 +212,40 @@ hr.solid {
 }
 
 .Footer-info {
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
     text-decoration: none;
     text-align: left;
-
 }
 
 .Footer-info a {
-    color: #fff;
+    color: var(--white);
     font-size: 1.2rem;
     text-decoration: none;
     display: flex;
 }
 
 .Footer-SM i {
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
     margin: 0 25px 17px 25px;
 }
 
 .Footer-files a{
-    color: #999;
-    opacity: 0.7;
+    color: var(--white);
+    opacity: 0.3;
     text-decoration: none;
     display: grid;
 }
 
 .Footer-info a:hover,
-.Footer-SM i:hover,
-.Footer-files a:hover {
+.Footer-SM i:hover { 
     color: #077132;
+}
+
+.Footer-files a:hover {
+    color: var(--white);
+    opacity: 1;
 }
 
 .copyrights {
@@ -344,21 +254,13 @@ hr.solid {
     width: 100%;
     bottom: 10px;
     font-size: 0.8rem;
+    color: var(--white);
 }
 
 .copyrights a {
-    color: #fff;
+    color: var(--white);
     font-size: 0.8rem;
     text-decoration: none;
-}
-
-@media (max-width:1500px) {
-    .Contact-Stroke {
-        border: none;
-        height: 300px;
-        margin: 0 auto 0 auto;
-        width: 100%;
-    }
 }
 
 @media (max-width:1100px) {
