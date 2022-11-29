@@ -6,7 +6,7 @@
 
     font-size: 3rem;
     font-family: OpenSansB;
-    color: #2c3b42;
+    color: var(--gray);
     background-color: rgba(7, 113, 50, 0.3);
     width: 500px;
     height: 70px;
@@ -24,9 +24,30 @@
 h1 {
     font-family: OpenSansB;
     font-size: 3rem;
-    color: #2c3b42;
+    color: var(--gray);
     text-align: center;
     padding-top: 100px;
+}
+
+h2 {
+    font-family: var(--Playfair);
+    font-size: 3rem;
+    color: var(--white);
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-family: var(--Playfair);
+    font-size: 3rem;
+    color: var(--gray);
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-family: var(--Light);
+    font-size: 1.3rem;
+    color: var(--white);
+    letter-spacing: 4px;
 }
 
 .inhoud {
@@ -35,7 +56,7 @@ h1 {
 
 /* ------------------------------------------------- */
 .intro {
-    background-image: url("/input/afbeeldingen/shutterstock_1814712359.jpg");
+    background-image: url("/input/afbeeldingen/shutterstock_1814712359-min.jpg");
     transform: scaleX(-1);
     min-height: 87vh;
     width: 96vw;
@@ -55,7 +76,6 @@ h1 {
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px #2c3b42;
     transform: scaleX(-1);
-
 }
 
 .intro-text a {
@@ -121,16 +141,19 @@ h1 {
     }
 }
 
-/* ------------------------------------------------- */
+/* ---------------------- Expertise --------------------------- */
+
 .Expertise-section {
     background-image: url(/input/afbeeldingen/Hout\ structuur-3.svg);
-    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
     height: 100vh;
     margin-top: -100px;
 }
 
-.spacer {
-    height: 250px;
+.spacer-225 {
+    height: 225px;
 }
 
 .Expertise-grid {
@@ -143,9 +166,6 @@ h1 {
 
 .Expertise-item {
     display: grid;
-    background-color: var(--gray);
-    background-image: url(/input/afbeeldingen/shutterstock_1814712359.jpg);
-    background-size: cover;
     width: 100%;
     height: 100%;
 }
@@ -159,6 +179,10 @@ h1 {
 
 .meubels {
     margin-top: 100px;
+    background-position: center;
+    background-image: url(/input/afbeeldingen/Expertise\ -\ meubels-min.jpg);
+    background-size: cover;
+    font-style: italic;
 }
 
 .meubels a {
@@ -169,13 +193,154 @@ h1 {
     display: grid;
     justify-content: end;
     align-items: end;
+
+    background-image: url(/input/afbeeldingen/Expertise\ -\ interieur-min.jpg);
+    background-size: cover;
+    background-position: right;
+    font-style: italic;
 }
 
 .interieur a {
     margin: auto -75px -75px auto;
 }
 
+/* ---------------------- Over --------------------------- */
+
+.Over-section {
+    position: relative;
+    width: 96vw;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    background-color: var(--gray);
+}
+
+.Over-bg {
+    background-image: url(/input/afbeeldingen/logo/Stijlvol\ Interieur\ logo\ icon\ -\ wit-3.svg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.Over-inhoud {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0 25px 0;
+    color: var(--white);
+
+    font-family: var(--Regular);
+    font-size: 1.25rem;
+}
+
+.Over-inhoud a,
+.Projecten a {
+    font-family: var(--Playfair);
+    font-size: 1.3rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.Over-inhoud a:hover,
+.Projecten a:hover {
+    color: var(--green);
+}
+
+/* ---------------------- Projecten --------------------------- */
+
+.spacer-100 {
+    height: 100px;
+}
+.spacer-50 {
+    height: 50px;
+}
+
+.gallery {
+    margin-top: -100px;
+}
+
+.gallery-cell img {
+    width: 675px;
+    height: 500px;
+    margin-right: 25px;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+.flickity-button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: none;
+}
+.flickity-button:hover {
+    background: none;
+    color: none;
+}
+
+.flickity-button-icon {
+    fill: var(--green);
+}
+
+.flickity-button-icon:hover {
+    fill: var(--white);
+}
+
+/* ---------------------- contact --------------------------- */
+
+.CtA {
+    text-align: center;
+    font-family: var(--Bold);
+    font-size: 3rem;
+    color: var(--gray);
+    letter-spacing: 4px;
+}
+.CtA p{
+    letter-spacing: 0px;
+    font-size: 1.3rem;
+    padding: 25px;
+}
+
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn {
+    /* position: relative; */
+    display: inline-block;
+    width: 277px;
+    color: var(--gray);
+    font-family: var(--Bold);
+    font-size: 1em;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}   
+
+.contact-btn svg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn svg rect {
+    stroke: var(--gray);
+    stroke-width: 3;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.contact-btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
 /* ---------------------- Footer --------------------------- */
+
 .Contact {
     position: relative;
     height: 50vh;
@@ -240,7 +405,7 @@ h1 {
 
 .Footer-info a:hover,
 .Footer-SM i:hover { 
-    color: #077132;
+    color: var(--green);
 }
 
 .Footer-files a:hover {

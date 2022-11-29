@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <link rel="stylesheet" href="http://code-love.tk/demos/prop/lib/css/perfect-scrollbar.css"/>
 
@@ -90,17 +91,17 @@
             <br>
         <div class="intro-button">
             <a href="/portfolio.html" class="btn">
-            <svg width="277" height="62">
-               <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
-            </svg>
-              PORTFOLIO   &#8594  
-          </a>
-          </div>
+                <svg width="277" height="62">
+                <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                </svg>
+            PORTFOLIO   &#8594
+            </a>
+        </div>
           
     </div>
 
     <div class="Expertise-section">
-        <div class="spacer"></div>
+        <div class="spacer-225"></div>
         <div class="Expertise-grid">
             <div class="Expertise-item meubels">
                 <a href="">
@@ -115,6 +116,76 @@
         </div>
     </div>
 
+    <div class="Over-section">
+        <div class="Over-bg">
+            <div class="Over-inhoud">
+                <h2>Over</h2>
+                <h4>Stijlvol Interieur</h4>
+                <br>
+                <span>
+                    Stijlvol interieur is meubel en interieur bouw onderneming die zich gespecialiseerd heeft in het ontwerpen en produceren van interieur. 
+                    Hierbij gebruikt Stijlvol Interieur alle soorten hout, al dan niet in combinatie met staal, en enkel duurzame producten. 
+                    Met het oog op detail en kwaliteit, een flinke dosis vakkennis en het vakmanschap geeft Stijlvol Interieur vorm aan alle dromen en wensen van de klant. 
+                    <br>
+                    <br>
+                    Met een persoonlijke aanpak en een op maat gemaakt ontwerp verzorgt Stijlvol Interieur het gehele proces, van ontwerp, productie tot aan de installatie. 
+                    Pas wanneer de wensen van de klant tot in de detail zijn afgewerkt en de wensen zijn 
+                    voldaan is de klus klaar.
+                </span>
+                <br>
+                <br>
+                <a href="/over.html"> Meer over Stijlvol Interieur &#8594</a>
+            </div>
+            <div class="spacer-50"></div>
+            <div class="Projecten">
+                <h2>Projecten</h2>
+                <a href="/portfolio.html">Bekijk meer &#8594</a>
+            </div>
+            <div class="spacer-100"></div>
+        </div>
+    </div>
+    
+    <div class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell">
+            <img src="/input/afbeeldingen/Portfolio/10-min.jpg" alt="">
+        </div>
+        <div class="gallery-cell">
+            <img src="/input/afbeeldingen/Portfolio/21-min.jpg" alt="">
+        </div>
+        <div class="gallery-cell">
+            <img src="/input/afbeeldingen/Portfolio/11-min.png" alt="">
+        </div>
+        <div class="gallery-cell">
+            <img src="/input/afbeeldingen/Portfolio/12-min.png" alt="">
+        </div>
+        <div class="gallery-cell">
+            <img src="/input/afbeeldingen/Portfolio/22-min.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="Contact-section">
+        <div class="spacer-100"></div>
+
+        <div class="CtA">
+            Benieuwd naar de mogelijkheden?
+            <p>
+                Nieuwschierig wat Stijlvol Interieur voor U kan betekenen? <br>
+                Spreek je wensen uit en laat je versteld staan van ons vakmanschap!
+            </p>
+        </div>
+        
+        <div class="contact-button">
+            <a href="/contact.html" class="contact-btn">
+                <svg width="277" height="62">
+                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                </svg>
+                    Contact   &#8594  
+            </a>
+        </div>
+            
+        <div class="spacer-100"></div>
+    </div>
 
 
     <footer class="Contact">
@@ -161,5 +232,6 @@
     </footer>
 
     <script src="/js/app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

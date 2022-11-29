@@ -13,6 +13,9 @@
 @font-face {
     font-family: OpenSansB;
     src: url(/input/fonts/open-sans/OpenSans-Bold.ttf);}
+@font-face {
+    font-family: Playfair;
+    src: url(/input/fonts/playfair/PlayfairDisplay-Bold.ttf);}
 
 :root {
     --white: #fff;
@@ -25,13 +28,13 @@
     --Light: OpenSansL;
     --Medium: OpenSansM;
     --Bold: OpenSansB;
+    --Playfair: Playfair;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: OpenSansR;
     font-size: 1rem;
 }
