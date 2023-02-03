@@ -1,1 +1,263 @@
 @import '/css/root.css';
+
+.pagina-header {
+    height: 300px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    align-items: end;
+}
+
+.pagina-titel {
+    width: 67.7083%;
+    height: 100px;
+    background-color: var(--white);
+
+    display: grid;
+    position: absolute;
+    justify-content: center;
+
+
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    z-index: 1;
+}
+
+.header-achtergrond {
+    min-height: 300px;
+    margin: auto 50px auto 50px;
+    
+    background-image: url("/input/afbeeldingen/shutterstock_1814712359-min.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    font-family: var(--Playfair);
+    display: flex;
+    align-items: flex-end;
+}
+
+.projecten-grid {
+    width: 100vw;
+    /* height: 600px; */
+    margin: 15vh auto;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-gap: 4vh;
+    
+    margin: auto 50px auto 50px;
+}
+
+.project-item {
+    /* background-color: var(--green); */
+    height: 45vh;
+    background-size: cover;
+}
+
+.item-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 94vh;
+    background-image: url(/input/afbeeldingen/Carousel/12-min.png);
+}
+.item-2 {
+    grid-column: 3 / 4;
+    /* grid-row: ; */
+    background-image: url(/input/afbeeldingen/Carousel/10-min.jpg);
+    /* background-position: center; */
+}
+
+.item-3 {
+    grid-column: 4 / 6;
+    background-image: url(/input/afbeeldingen/Portfolio/IMG_4255.jpg);
+    background-position: bottom;
+}
+.item-4 {
+    grid-column: 3 / 5;
+    background-image: url(/input/afbeeldingen/Portfolio/IMG_4279.jpg);
+    background-position: bottom;
+}
+.item-5 {
+    grid-column: 5 / 6;
+    background-image: url(/input/afbeeldingen/Portfolio/IMG_4300.jpg);
+    background-position: bottom;
+    /* background-size: contain; */
+}
+.item-6 {
+    grid-column: 1 / 2;
+    background-image: url(/input/afbeeldingen/);
+}
+.item-7 {
+    grid-column: 2 / 4;
+    background-image: url(/input/afbeeldingen/);
+
+}
+.item-8 {
+    grid-column: 4 / 6;
+    background-image: url(/input/afbeeldingen/);
+}
+
+/* ---------------------------------------------------1450px----------------------------------------- */
+@media (max-width: 1450px) {
+    .grid-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .project-item {
+        background-color: var(--green);
+        height: 48vh;
+    }
+    
+    .item-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .item-2 {
+        grid-column: 3 / 4;
+    }
+    
+    .item-3 {
+        grid-column: 1 / 2;
+    }
+    .item-4 {
+        grid-column: 2 / 4;
+    }
+    .item-5 {
+        grid-column: 1 / 3;
+    }
+    .item-6 {
+        grid-column: 3 / 4;
+    }
+    .item-7 {
+        grid-column: 1 / 2;
+    }
+    .item-8 {
+        grid-column: 2 / 4;
+    }
+}
+
+
+/* ---------------------------------------------------1024px----------------------------------------- */
+@media (max-width: 1024px) {
+    .grid-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .project-item {
+        background-color: var(--green);
+        height: 32vh;
+    }
+    
+    .item-1 {
+        grid-column: 1 / 3;
+    }
+    .item-2 {
+        grid-column: 3 / 4;
+    }
+    
+    .item-3 {
+        grid-column: 1 / 2;
+    }
+    .item-4 {
+        grid-column: 2 / 4;
+    }
+    .item-5 {
+        grid-column: 1 / 3;
+    }
+    .item-6 {
+        grid-column: 3 / 4;
+    }
+    .item-7 {
+        grid-column: 1 / 2;
+    }
+    .item-8 {
+        grid-column: 2 / 4;
+    }
+}
+
+/* ---------------------------------------------------768px----------------------------------------- */
+@media (max-width: 768px) {
+    .grid-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item-1 {
+        grid-column: 1 / 3;
+    }
+    .item-2 {
+        grid-column: 1 / 3;
+    }
+    
+    .item-3 {
+        grid-column: 1 / 3;
+    }
+    .item-4 {
+        grid-column: 1 / 3;
+    }
+    .item-5 {
+        grid-column: 1 / 3;
+    }
+    .item-6 {
+        grid-column: 1 / 3;
+    }
+    .item-7 {
+        grid-column: 1 / 3;
+    }
+    .item-8 {
+        grid-column: 1 / 3;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.contact-oproep {
+    margin: 15vh 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--Kopje);
+}
+
+.eigen-button {
+    border-radius: 50px;
+    border: 3px solid var(--gray);
+    width: 250px;
+    margin: 3vh auto;
+
+    cursor: pointer;
+  
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.eigen-button a {
+    text-decoration: none;
+    color: var(--gray);
+    font-family: var(--Semi);
+}
+
+  /* button:hover .button-text {
+    display: none;
+  }
+  button .button-arrow {
+    display: none;
+  }
+  
+  button:hover .button-arrow {
+    display: inline;
+  } */
+
+  /*           
+    <button>
+        <span class="button-text">Contact</span> </a>
+        <span class="button-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+    </button> 
+  */

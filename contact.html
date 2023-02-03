@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+    <script
+      src="https://kit.fontawesome.com/4010060b99.js"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    ></script>
 
     <link
       rel="stylesheet"
@@ -25,8 +19,11 @@
 
     <link rel="stylesheet" href="/css/pages/contact.css" />
 
-    <link rel="icon" href="" type="image/icon type" />
-    <link rel="icon" href="/input/afbeeldingen/logo/Asset 1.png" />
+    <link
+      rel="icon"
+      href="/input/afbeeldingen/logo/Stijlvol Interieur logo icon - groen.png"
+      type="image/icon type"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -53,63 +50,135 @@
           src="/input/afbeeldingen/logo/Logo_zonderpayoff kleur.png"
         />
       </a>
-      <div class="openMenu"><i class="fa fa-reorder"></i></div>
+      <div class="openMenu">
+        <i class="fa-solid fa-bars-staggered fa-xs"></i>
+      </div>
       <ul class="mainMenu">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/over.html">Over</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/portfolio.html">Projecten</a></li>
         <li><a href="/contact.html">Contact</a></li>
-        <div class="closeMenu"><i class="fa fa-close"></i></div>
+        <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
         <span class="icons">
           <br /><br /><br /><br />
-          <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </span>
       </ul>
     </nav>
 
-    <div class="Header">Contact ons</div>
+    <div class="pagina-header">
+      <div class="pagina-titel"><h1>Contact</h1></div>
+      <div class="header-achtergrond"></div>
+    </div>
 
-    <div class="inhoud"></div>
+    <div class="contact-grid">
+      <div class="contact-item gegevens">
+        <div>
+          <h2>Gegevens:</h2>
 
-    <!-- <div class="Contact-ons">
-      <div class="Contact-row">
-        <div class="Contact-column">
-          <div class="Column-titel">Vragen?</div>
-          <br />
-          Lorum ipsumLorum ipsumLorum ipsumLorum ipsum <br />
-          Lorum ipsumLorum ipsumLorum ipsumLorum ipsum
+          <div class="gegevens-list">
+            <div class="list-item mail">
+              <a href="mailto:info@stijlvolinterieur.nl" target="_blank">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope fa-lg"></i>
+                </div>
+                info@stijlvolinterieur.nl
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+              </a>
+            </div>
+
+            <div class="list-item nummer">
+              <a href="tel:+31630275956">
+                <div class="icon">
+                  <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                </div>
+                06 - 30 27 59 56
+              </a>
+            </div>
+
+            <div class="list-item app">
+              <a href="">
+                <div class="icon">
+                  <i class="fa-regular fa-comment fa-lg"></i>
+                </div>
+                Whatsapp
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="Contact-row">
-        <div class="Contact-column">
-          <b>E-mail:</b>
-          <br />
-          info@Stijlvolinterieur.nl
-        </div>
-        <div class="Contact-column">
-          <b>Teleofoonnummer:</b>
-          <br />
-          06 30 27 59 56
-        </div>
-      </div>
-      <div class="Contact-column">
-        <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      <div class="contact-item oproep">
+        <img
+          src="/input/afbeeldingen/logo/Stijlvol Interieur logo icon - groen.svg"
+          alt=""
+        />
+        Vragen over het interieur van je dromen?
+        <br />
+        <br />
+        Geef een belletje!
       </div>
     </div>
 
-    <div class="Contact-formulier">
-      <h1>Stuur ons een berichtje</h1>
+    <form
+      method="post"
+      name="myemailform"
+      action="form-to-email.php"
+      class="contact-form"
+    >
+      <div class="form-titel">
+        <h2>Of toch liever een mailtje sturen?</h2>
+        <h2>Laat hier je vraag achter.</h2>
+      </div>
 
-      <form id="form" class="topBefore">
-        <input id="name" type="text" placeholder="Naam" />
-        <input id="email" type="text" placeholder="E-mail" />
-        <textarea id="message" type="text" placeholder="Bericht"></textarea>
-        <input id="submit" type="submit" value="Versturen" />
-      </form>
-    </div> -->
+      <div class="form-grid">
+        <div class="links">
+          <p type="Naam:">
+            <input type="text" placeholder="Je naam:" name="name" required />
+          </p>
+
+          <p type="Mobiel:">
+            <input
+              type="tel"
+              placeholder="Telefoonnummer:"
+              name="number"
+              required
+            />
+          </p>
+        </div>
+
+        <div class="rechts">
+          <p type="E-mail">
+            <input
+              type="email"
+              placeholder="E-mailadres:"
+              name="email"
+              required
+            />
+          </p>
+
+          <p type="Onderwerp:">
+            <input type="text" placeholder="Onderwerp:" name="subject" />
+          </p>
+        </div>
+      </div>
+
+      <p type="Bericht:">
+        <textarea
+          name="message"
+          placeholder="Stel je vraag:"
+          required
+        ></textarea>
+      </p>
+
+      <input type="submit" value="Versturen" class="submit" />
+    </form>
+
+    <!-- ------------------------------------------- -->
 
     <footer class="Contact">
       <div class="Contact-bg">
@@ -122,14 +191,16 @@
             <div class="Footer-item Footer-info">
               <a href="/index.html">Home</a>
               <a href="/over.html">Over</a>
-              <a href="/portfolio.html">Portfolio</a>
+              <a href="/portfolio.html">Projecten</a>
               <a href="/contact.html">Contact</a>
             </div>
             <div class="Footer-item Footer-SM">
               <a href="" target="_blank"
-                ><i class="fab fa-facebook-square"></i
+                ><i class="fa-brands fa-square-facebook"></i
               ></a>
-              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
               <div class="Footer-item Footer-files">
                 <br />
                 <a href="">Algemeen</a>
@@ -155,7 +226,7 @@
         </div>
 
         <div class="copyrights">
-          <a href="https://freekvandenbosch.nl/" target="_blank"
+          <a href="https://freschbranding.nl/" target="_blank"
             >FRESCH BRANDING </a
           >| All rights reserved ©
         </div>
@@ -163,5 +234,15 @@
     </footer>
 
     <script src="/js/app.js"></script>
+    <script language="JavaScript">
+      var frmvalidator = new Validator("contactform");
+      frmvalidator.addValidation("name", "req", "Please provide your name");
+      frmvalidator.addValidation("email", "req", "Please provide your email");
+      frmvalidator.addValidation(
+        "email",
+        "email",
+        "Please enter a valid email address"
+      );
+    </script>
   </body>
 </html>

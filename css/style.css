@@ -1,55 +1,5 @@
 @import '/css/root.css';
 
-.Header {
-    text-align: center;
-    padding-top: 30px;
-
-    font-size: 3rem;
-    font-family: OpenSansB;
-    color: var(--gray);
-    background-color: rgba(7, 113, 50, 0.3);
-    width: 500px;
-    height: 70px;
-
-    position: relative;
-    margin: 10px auto 50px auto;
-}
-
-@media (max-width: 600px) {
-    .Header {
-        width: 60%;
-    }
-}
-
-h1 {
-    font-family: OpenSansB;
-    font-size: 3rem;
-    color: var(--gray);
-    text-align: center;
-    padding-top: 100px;
-}
-
-h2 {
-    font-family: var(--Playfair);
-    font-size: 3rem;
-    color: var(--white);
-    letter-spacing: 4px;
-}
-
-h3 {
-    font-family: var(--Playfair);
-    font-size: 3rem;
-    color: var(--gray);
-    letter-spacing: 4px;
-}
-
-h4 {
-    font-family: var(--Light);
-    font-size: 1.3rem;
-    color: var(--white);
-    letter-spacing: 4px;
-}
-
 .inhoud {
     height: 1000px;
 }
@@ -124,22 +74,6 @@ h4 {
     stroke-dashoffset: 437;
 }
 
-@media (max-width: 1100px) {
-    .intro-text {
-        padding: 120% 4% 0 4%;
-        font-size: 1rem;
-    }
-
-    .intro-text a {
-        font-size: 2rem;
-    }
-
-    .intro-button {
-        position: absolute;
-        left: 22%;
-        /* transform: translate(-50%, -50%); */
-    }
-}
 
 /* ---------------------- Expertise --------------------------- */
 
@@ -150,10 +84,6 @@ h4 {
     /* width: 100vw; */
     height: 975px;
     margin-top: -100px;
-}
-
-.spacer-225 {
-    height: 225px;
 }
 
 .Expertise-grid {
@@ -171,7 +101,7 @@ h4 {
 }
 
 .Expertise-item a {
-    font-family: var(--Bold);
+    font-family: var(--Playfair);
     font-size: 7rem;
     color: var(--green);
     text-decoration: none;
@@ -182,7 +112,7 @@ h4 {
     background-position: center;
     background-image: url(/input/afbeeldingen/Expertise\ -\ meubels-min.jpg);
     background-size: cover;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .meubels a {
@@ -197,7 +127,7 @@ h4 {
     background-image: url(/input/afbeeldingen/Expertise\ -\ interieur-min.jpg);
     background-size: cover;
     background-position: right;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .interieur a {
@@ -216,12 +146,12 @@ h4 {
 
 .Over-bg {
     background-image: url(/input/afbeeldingen/logo/Stijlvol\ Interieur\ logo\ icon\ -\ wit-3.svg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 
 .Over-inhoud {
-    width: 50%;
+    width: 50vw;
     margin: 0 auto;
     padding: 50px 0 25px 0;
     color: var(--white);
@@ -230,7 +160,7 @@ h4 {
     font-size: 1.25rem;
 }
 
-.Over-inhoud a,
+/* .Over-inhoud a,
 .Projecten a {
     font-family: var(--Playfair);
     font-size: 1.3rem;
@@ -240,16 +170,42 @@ h4 {
 .Over-inhoud a:hover,
 .Projecten a:hover {
     color: var(--green);
+} */
+
+.Projecten-titel {
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+.over-titel {
+    letter-spacing: 4px;
+}
+
+button,
+button  a,
+.button-text,
+.button-arrow{
+    background: none;
+    border: none;
+
+    font-family: var(--Playfair);
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+button:hover .button-text {
+    display: none; 
+}
+
+button .button-arrow {
+    display: none;
+}
+
+button:hover .button-arrow {
+    display: inline;
 }
 
 /* ---------------------- Projecten --------------------------- */
-
-.spacer-100 {
-    height: 100px;
-}
-.spacer-50 {
-    height: 50px;
-}
 
 .gallery {
     margin-top: -100px;
@@ -289,12 +245,10 @@ h4 {
 .CtA {
     text-align: center;
     font-family: var(--Bold);
-    font-size: 3rem;
+    font-size: var(--Titel);
     color: var(--gray);
-    letter-spacing: 4px;
 }
 .CtA p{
-    letter-spacing: 0px;
     font-size: 1.3rem;
     padding: 25px;
 }
@@ -344,8 +298,8 @@ h4 {
 .Contact {
     position: relative;
     height: 50vh;
-    width: 96vw;
-    margin: 0 auto 30px auto;
+    width: 95%;
+    margin: 0 auto 50px auto;
     text-align: center;
     background-color: var(--gray);
 }
@@ -429,6 +383,26 @@ h4 {
 }
 
 @media (max-width:1100px) {
+    .intro-text {
+        padding: 120% 4% 0 4%;
+        font-size: 1rem;
+    }
+
+    .intro-text a {
+        font-size: 2rem;
+    }
+
+    .intro-button {
+        position: absolute;
+        left: 22%;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .Over-inhoud {
+        width: 70vw;
+    }
+
+    /* ------------------------- Footer ------------------------------- */
     .Contact {
         height: 325px;
         margin: 0 auto 10px auto;
@@ -449,3 +423,85 @@ h4 {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .Expertise-grid {
+        grid-template-columns: repeat(1, 75vw);
+        grid-template-rows: repeat(2, 30vh);
+    }
+    .Expertise-item a {
+        font-size: var(--Titel);
+    }
+    .Expertise-section {
+        margin: 100px 50px;
+        height: auto;
+    }
+
+    .meubels a,
+    .interieur a {
+        margin: -40px -25px;
+    }
+
+    .meubels {
+    margin: auto;
+    }
+    .interieur {
+    justify-content: start;
+    align-items: start;
+    /* display: block; */
+
+    /* display: grid; */
+    justify-content: end;
+    }
+
+    .spacer-225 {
+        display: none;
+    }
+}
+
+/* .Expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 675px );
+    grid-template-rows: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+} */
+
+/* .Expertise-item {
+    display: grid;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .Expertise-item a {
+    font-family: var(--Bold);
+    font-size: 7rem;
+    color: var(--green);
+    text-decoration: none;
+} */
+
+/* .meubels {
+    margin-top: 100px;
+    background-position: center;
+    background-image: url(/input/afbeeldingen/Expertise\ -\ meubels-min.jpg);
+    background-size: cover;
+    font-style: italic;
+} */
+
+/* .meubels a {
+    margin: -100px auto auto -75px;
+} */
+/* .interieur a {
+    margin: auto -75px -75px auto;
+} */
+
+/* .interieur {
+    display: grid;
+    justify-content: end;
+    align-items: end;
+
+    background-image: url(/input/afbeeldingen/Expertise\ -\ interieur-min.jpg);
+    background-size: cover;
+    background-position: right;
+    font-style: italic;
+} */

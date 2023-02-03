@@ -14,13 +14,16 @@
     font-family: OpenSansB;
     src: url(/input/fonts/open-sans/OpenSans-Bold.ttf);}
 @font-face {
+    font-family: OpenSansSB;
+    src: url(/input/fonts/open-sans/OpenSans-SemiBold.ttf);}
+@font-face {
     font-family: Playfair;
     src: url(/input/fonts/playfair/PlayfairDisplay-Bold.ttf);}
 
 :root {
     --white: #fff;
     --gray: #2c3b42;
-    --lightgray: rgba(7, 113, 50, 0.3);
+    --lightgray: rgba(44, 59, 66, 0.2);
     --green: #077132; 
 
     --Regular: OpenSansR;
@@ -28,7 +31,12 @@
     --Light: OpenSansL;
     --Medium: OpenSansM;
     --Bold: OpenSansB;
+    --Semi: OpenSansSB;
     --Playfair: Playfair;
+
+    --Body: 1rem;
+    --Kopje: 2rem;
+    --Titel: 3rem;
 }
 
 * {
@@ -37,4 +45,47 @@
     box-sizing: border-box;
     font-family: OpenSansR;
     font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: var(--Bold);
+    font-size: var(--Titel);
+    color: var(--gray);
+    /* text-align: center;
+    padding-top: 100px; */
+}
+
+h2 {
+    font-family: var(--Playfair);
+    font-size: 3rem;
+    color: var(--white);
+    /* letter-spacing: 4px; */
+}
+
+h3 {
+    font-family: var(--Playfair);
+    font-size: 3rem;
+    color: var(--gray);
+    /* letter-spacing: 4px; */
+}
+
+h4 {
+    font-family: var(--Light);
+    font-size: 1.3rem;
+    color: var(--white);
+    /* letter-spacing: 4px; */
+}
+
+.spacer-225 {
+    height: 225px;
+}
+.spacer-100 {
+    height: 100px;
+}
+.spacer-50 {
+    height: 50px;
 }

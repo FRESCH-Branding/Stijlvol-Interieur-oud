@@ -1,3 +1,5 @@
+@import '/css/root.css';
+
 nav {
     display: flex;
     background-color: #fff;
@@ -8,7 +10,7 @@ nav {
 .logo {
     display: inline-block;
     height: 60px;
-    margin: 20px 75px;
+    margin: 20px 50px;
 }
 
 nav .mainMenu {
@@ -19,12 +21,12 @@ nav .mainMenu {
 }
 
 nav .mainMenu li a {
-    font-family: OpenSansR;
+    font-family: var(--Medium);
     display: inline-block;
     text-decoration: none;
     color: #2c3b42;
     font-size: 16pt;
-    margin-right: 75px;
+    margin-right: 50px;
     line-height: 10vh;
 }
 
