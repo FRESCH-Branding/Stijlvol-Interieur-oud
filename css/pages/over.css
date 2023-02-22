@@ -95,8 +95,8 @@ h2 {
 .eigen-button {
     border-radius: 50px;
     border: 3px solid var(--gray);
-    width: 250px;
-    margin: 5vh auto;
+    width: 50%;
+    margin: 5vh 0;
 
     cursor: pointer;
   
@@ -134,6 +134,7 @@ h2 {
     }
     .eigen-button {
         margin-bottom: 15vh;
+        width: auto;
     }
 }
 
