@@ -124,12 +124,7 @@
       </div>
     </div>
 
-    <form
-      method="post"
-      name="myemailform"
-      action="form-to-email.php"
-      class="contact-form"
-    >
+    <form action="form-to-email.php" method="POST" class="contact-form">
       <div class="form-titel">
         <h2>Of toch liever een mailtje sturen?</h2>
         <h2>Laat hier je vraag achter.</h2>
@@ -138,14 +133,14 @@
       <div class="form-grid">
         <div class="links">
           <p type="Naam:">
-            <input type="text" placeholder="Je naam:" name="name" required />
+            <input type="text" placeholder="Je naam:" name="naam" required />
           </p>
 
           <p type="Mobiel:">
             <input
               type="tel"
               placeholder="Telefoonnummer:"
-              name="number"
+              name="telefoonnummer"
               required
             />
           </p>
@@ -162,14 +157,14 @@
           </p>
 
           <p type="Onderwerp:">
-            <input type="text" placeholder="Onderwerp:" name="subject" />
+            <input type="text" placeholder="Onderwerp:" name="onderwerp" />
           </p>
         </div>
       </div>
 
       <p type="Bericht:">
         <textarea
-          name="message"
+          name="bericht"
           placeholder="Stel je vraag:"
           required
         ></textarea>
@@ -234,15 +229,5 @@
     </footer>
 
     <script src="/js/app.js"></script>
-    <script language="JavaScript">
-      var frmvalidator = new Validator("contactform");
-      frmvalidator.addValidation("name", "req", "Please provide your name");
-      frmvalidator.addValidation("email", "req", "Please provide your email");
-      frmvalidator.addValidation(
-        "email",
-        "email",
-        "Please enter a valid email address"
-      );
-    </script>
   </body>
 </html>
