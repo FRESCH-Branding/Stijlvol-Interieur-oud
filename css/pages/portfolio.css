@@ -43,176 +43,44 @@ h1 {
     align-items: flex-end;
 }
 
-.projecten-grid {
-    width: 100vw;
-    /* height: 600px; */
-    margin: 15vh auto;
+.portfolio-grid {
+    width: 97.5vw;
+    margin: 15vh auto 0 auto;
+    padding: 0;
 }
 
-.grid-body {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
-    grid-gap: 4vh;
-    
-    margin: auto 50px auto 50px;
+.portfolio-row {
+    margin: 50px;
+    padding: 0;
 }
 
-.project-item {
-    /* background-color: var(--green); */
-    height: 45vh;
-    background-size: cover;
+.column {
+    /* background-color: green; */
+    height: 25vw;
+    margin: 1.5vw 0 !important;
+    padding: 0 !important;
 }
 
-.item-1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    height: 94vh;
-    background-image: url(/input/afbeeldingen/Carousel/12-min.png);
-    background-position: center;
-}
-.item-2 {
-    grid-column: 3 / 4;
-    /* grid-row: ; */
-    background-image: url(/input/afbeeldingen/Carousel/10-min.jpg);
-    /* background-position: center; */
+.column img {
+    height: 25vw;
+    width: 100%;
+    object-fit: cover;
 }
 
-.item-3 {
-    grid-column: 4 / 6;
-    background-image: url(/input/afbeeldingen/Portfolio/IMG_4255.jpg);
-    background-position: bottom;
-}
-.item-4 {
-    grid-column: 3 / 5;
-    background-image: url(/input/afbeeldingen/Portfolio/IMG_4279.jpg);
-    background-position: bottom;
-}
-.item-5 {
-    grid-column: 5 / 6;
-    background-image: url(/input/afbeeldingen/Portfolio/IMG_4300.jpg);
-    background-position: bottom;
-    /* background-size: contain; */
-}
-.item-6 {
-    grid-column: 1 / 2;
-    background-image: url(/input/afbeeldingen/);
-}
-.item-7 {
-    grid-column: 2 / 4;
-    background-image: url(/input/afbeeldingen/);
-
-}
-.item-8 {
-    grid-column: 4 / 6;
-    background-image: url(/input/afbeeldingen/);
-}
-
-/* ---------------------------------------------------1450px----------------------------------------- */
-@media (max-width: 1450px) {
-    .grid-body {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .project-item {
-        /* background-color: var(--green); */
-        height: 48vh;
-    }
-    
-    .item-1 {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-    .item-2 {
-        grid-column: 3 / 4;
-    }
-    
-    .item-3 {
-        grid-column: 1 / 2;
-    }
-    .item-4 {
-        grid-column: 2 / 4;
-    }
-    .item-5 {
-        grid-column: 1 / 3;
-    }
-    .item-6 {
-        grid-column: 3 / 4;
-    }
-    .item-7 {
-        grid-column: 1 / 2;
-    }
-    .item-8 {
-        grid-column: 2 / 4;
+@media (max-width: 1200px) {
+    .column,
+    .column img {
+        height: 35vw;
     }
 }
-
-
-/* ---------------------------------------------------1024px----------------------------------------- */
-@media (max-width: 1024px) {
-    .grid-body {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .project-item {
-        /* background-color: var(--green); */
-        height: 32vh;
-    }
-    
-    .item-1 {
-        grid-column: 1 / 3;
-    }
-    .item-2 {
-        grid-column: 3 / 4;
-    }
-    
-    .item-3 {
-        grid-column: 1 / 2;
-    }
-    .item-4 {
-        grid-column: 2 / 4;
-    }
-    .item-5 {
-        grid-column: 1 / 3;
-    }
-    .item-6 {
-        grid-column: 3 / 4;
-    }
-    .item-7 {
-        grid-column: 1 / 2;
-    }
-    .item-8 {
-        grid-column: 2 / 4;
-    }
-}
-
-/* ---------------------------------------------------768px----------------------------------------- */
 @media (max-width: 768px) {
-    .grid-body {
-        grid-template-columns: repeat(2, 1fr);
+    .portfolio-grid {
+        width: 95vw;
     }
-    .item-1 {
-        grid-column: 1 / 3;
-    }
-    .item-2 {
-        grid-column: 1 / 3;
-    }
-    
-    .item-3 {
-        grid-column: 1 / 3;
-    }
-    .item-4 {
-        grid-column: 1 / 3;
-    }
-    .item-5 {
-        grid-column: 1 / 3;
-    }
-    .item-6 {
-        grid-column: 1 / 3;
-    }
-    .item-7 {
-        grid-column: 1 / 3;
-    }
-    .item-8 {
-        grid-column: 1 / 3;
+
+    .column,
+    .column img {
+        height: 50vh;
     }
 }
 
@@ -244,21 +112,3 @@ h3 {
     color: var(--gray);
     font-family: var(--Semi);
 }
-
-  /* button:hover .button-text {
-    display: none;
-  }
-  button .button-arrow {
-    display: none;
-  }
-  
-  button:hover .button-arrow {
-    display: inline;
-  } */
-
-  /*           
-    <button>
-        <span class="button-text">Contact</span> </a>
-        <span class="button-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-    </button> 
-  */
