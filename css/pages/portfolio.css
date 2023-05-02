@@ -1,46 +1,26 @@
 @import '/css/root.css';
 
-.pagina-header {
-    height: 300px;
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    align-items: end;
-}
-
-.pagina-titel {
-    width: 67.7083%;
-    height: 100px;
-    background-color: var(--white);
-
-    display: grid;
-    position: absolute;
-    justify-content: center;
-
-
-    left: 0;
-    right: 0;
-    margin: auto;
-    
-    z-index: 1;
-}
-
 .header-achtergrond {
-    min-height: 300px;
-    margin: auto 50px auto 50px;
-    
     background-image: url("/input/afbeeldingen/shutterstock_1814712359-min.jpg");
     background-position: center;
     background-size: cover;
-    position: relative;
+    margin: 0 2.6vw;
+}
+
+.spacer {
+    height: 20vh;
+}
+
+.pagina {
+    background-color: var(--white);
+    padding: 6vh 0 0 0;
 }
 
 h1 {
     font-family: var(--Playfair);
-    display: flex;
-    align-items: flex-end;
+    font-size: var(--Titel);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .portfolio-grid {

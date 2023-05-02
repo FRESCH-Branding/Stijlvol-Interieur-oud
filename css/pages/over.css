@@ -1,65 +1,38 @@
 @import '/css/root.css';
 
-.pagina-header {
-    height: 600px;
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    align-items: end;
-}
-
-.pagina-titel {
-    width: 67.7083%;
-    height: 100px;
-    background-color: var(--white);
-
-    display: grid;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-
-
-    left: 0;
-    right: 0;
-    margin: auto;
-    
-    z-index: 1;
-}
-
 .header-achtergrond {
-    min-height: 100%;
-    margin: auto 50px auto 50px;
-    
     background-image: url("/input/afbeeldingen/shutterstock_1814712359-min.jpg");
     background-position: center;
     background-size: cover;
-    position: relative;
+    margin: 0 2.6vw;
+}
+
+.slogan {
+    transform: skew(0deg, -5deg);
+    padding: 15vh;
+    color: var(--white);
+}
+
+.pagina {
+    background-color: var(--white);
+    padding: 6vh 0 0 0;
 }
 
 h1 {
     font-family: var(--Playfair);
-    display: flex;
-    align-items: flex-end;
-}
-
-.slogan-container {
-    position: relative;
-    transform: skew(0deg, -5deg);
-    z-index: 1;
-}
-.slogan {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 250px;
+    font-size: var(--Titel);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 h2 {
     font-family: var(--Bold);
     line-height: var(--Titel);
+    margin: 0;
+    padding: 0;
 }
+
+
+
 
 .over-alinea {
     width: 50vw;
