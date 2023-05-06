@@ -110,7 +110,7 @@
 .meubels {
     margin-top: 100px;
     background-position: center;
-    background-image: url(/input/afbeeldingen/Expertise\ -\ meubels-min.jpg);
+    background-image: url(/input/afbeeldingen/Portfolio-afbeeldingen/21-Stijlvol\ Interieur.jpg);
     background-size: cover;
     /* font-style: italic; */
 }
@@ -124,9 +124,10 @@
     justify-content: end;
     align-items: end;
 
-    background-image: url(/input/afbeeldingen/Expertise\ -\ interieur-min.jpg);
+    /* background-image: url(/input/afbeeldingen/Portfolio/Daan\ thuis/3\ -\ Stijlvol\ Interieur\ .png); */
+    background-image: url(/input/afbeeldingen/Portfolio-afbeeldingen/10-Stijlvol\ Interieur.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     /* font-style: italic; */
 }
 
@@ -212,8 +213,9 @@ button:hover .button-arrow {
 }
 
 .gallery-cell img {
-    width: 675px;
+    width: 800px;
     height: 500px;
+    object-fit: cover;
     margin-right: 25px;
 }
 
