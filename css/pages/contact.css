@@ -28,71 +28,72 @@ h2 {
     font-size: var(--Kopje);
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-
+.contact-container {
     margin: 15vh auto;
-    width: 67.7083%;
 }
 
-.contact-item {
-    margin: auto;
-    height: 200px;
-}
-
-.gegevens-list {
+.gegevens-col {
     display: grid;
-    color: var(--gray);
-    margin: 10px 20px;
+    justify-content: center;
 }
 
-
-.icon {
-    width: 20px;
-    margin-right: 10px;
+.gegevens-list li{
+    list-style: none;        
+    margin: 5px 5px 5px 25px;
 }
 
+.gegevens-list a i {
+    width: 25px;
+}
 
-.list-item a {
-    display: inline-flex;
-    align-items: center;
-    grid-gap: 5px;
-    color: var(--gray);
+.gegevens-list a {
     text-decoration: none;
-    font-size: 1.5rem;
-    
-}
-
-.list-item i {
-    display: inline-flex;
-    align-items: center;
-}
-
-.list-item a:hover{
-    color: var(--green);
-}
-
-.oproep img {
-    position: absolute;
-    z-index: -1;
-    width: 70%;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 15%;
-}
-
-.oproep {
-    position: relative;
-    width: 75%;
-    font-family: var(--Playfair);
-    font-size: var(--Kopje);
     color: var(--gray);
+    font-size: 1.2rem;
 
-    text-align: center;
 }
+
+.gegevens-list a:hover {
+ color: var(--green);
+}
+
+
+.oproep-col {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+    flex-direction: column;
+}
+
+.oproep-col::before {
+    content: "";
+    background-image: url(/input/afbeeldingen/logo/Stijlvol\ Interieur\ logo\ icon\ -\ groen.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 15%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+
+h2 {
+    position: relative;
+}
+
+
+
+
+
+
+
 
 .contact-form {
     width: 40vw;
@@ -198,4 +199,12 @@ textarea::placeholder {
         padding-bottom: 10vh;
     }
 
+}
+
+@media (max-width: 768px) {
+    .gegevens-col {
+        display: block;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
 }
